@@ -76,6 +76,192 @@
       "operation": "migrate",
       "exception": null,
       "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.22.3",
+      "database": "flyway_poc",
+      "warnings": [],
+      "timestamp": "2025-06-04T11:39:33.800336",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.22.3",
+      "database": "flyway_poc",
+      "warnings": [],
+      "timestamp": "2025-06-04T11:41:06.300176",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.22.3",
+      "database": "flyway_poc",
+      "warnings": [],
+      "timestamp": "2025-06-04T11:43:34.847905",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.22.3",
+      "database": "flyway_poc",
+      "warnings": [],
+      "timestamp": "2025-06-04T11:45:43.834400",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "2",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1",
+          "description": "initial schema",
+          "type": "SQL",
+          "filepath": "/Users/mac/node-flyway-poc/migrations/V1__initial_schema.sql",
+          "executionTime": 9
+        },
+        {
+          "category": "Versioned",
+          "version": "2",
+          "description": "seed data",
+          "type": "SQL",
+          "filepath": "/Users/mac/node-flyway-poc/migrations/V2__seed_data.sql",
+          "executionTime": 5
+        }
+      ],
+      "migrationsExecuted": 2,
+      "success": true,
+      "flywayVersion": "9.22.3",
+      "database": "flyway_poc_dev",
+      "warnings": [],
+      "timestamp": "2025-06-04T11:45:58.445233",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.22.3",
+      "database": "flyway_poc_dev",
+      "warnings": [],
+      "timestamp": "2025-06-04T11:49:00.896356",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.22.3",
+      "database": "flyway_poc_dev",
+      "warnings": [],
+      "timestamp": "2025-06-04T11:50:00.358589",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "2",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1",
+          "description": "initial schema",
+          "type": "SQL",
+          "filepath": "/Users/mac/node-flyway-poc/migrations/V1__initial_schema.sql",
+          "executionTime": 9
+        },
+        {
+          "category": "Versioned",
+          "version": "2",
+          "description": "seed data",
+          "type": "SQL",
+          "filepath": "/Users/mac/node-flyway-poc/migrations/V2__seed_data.sql",
+          "executionTime": 4
+        }
+      ],
+      "migrationsExecuted": 2,
+      "success": true,
+      "flywayVersion": "9.22.3",
+      "database": "flyway_poc_stg",
+      "warnings": [],
+      "timestamp": "2025-06-04T11:50:01.626063",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "2",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1",
+          "description": "initial schema",
+          "type": "SQL",
+          "filepath": "/Users/mac/node-flyway-poc/migrations/V1__initial_schema.sql",
+          "executionTime": 9
+        },
+        {
+          "category": "Versioned",
+          "version": "2",
+          "description": "seed data",
+          "type": "SQL",
+          "filepath": "/Users/mac/node-flyway-poc/migrations/V2__seed_data.sql",
+          "executionTime": 4
+        }
+      ],
+      "migrationsExecuted": 2,
+      "success": true,
+      "flywayVersion": "9.22.3",
+      "database": "flyway_poc_prod",
+      "warnings": [],
+      "timestamp": "2025-06-04T11:50:03.031554",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
     }
   ]
 }

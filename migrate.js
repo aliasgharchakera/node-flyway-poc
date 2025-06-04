@@ -1,15 +1,28 @@
 require("dotenv").config();
 const { Flyway } = require("node-flyway");
 const path = require("path");
+const fs = require("fs");
 
 // Get environment from command line argument or default to development
 const environment = process.argv[2] || "development";
 const envFile = `.env.${environment}`;
 
-// Load environment-specific variables
-require("dotenv").config({ path: envFile });
+// Check if environment file exists
+if (!fs.existsSync(envFile)) {
+  console.error(`Error: Environment file ${envFile} not found!`);
+  process.exit(1);
+}
 
+// Load environment-specific variables
+require("dotenv").config({ path: envFile, override: true });
+
+// Debug information
 console.log(`Running migrations for environment: ${environment}`);
+console.log("Database configuration:");
+console.log(`Host: ${process.env.DB_HOST}`);
+console.log(`Port: ${process.env.DB_PORT}`);
+console.log(`Database: ${process.env.DB_NAME}`);
+console.log(`User: ${process.env.DB_USER}`);
 
 const flyway = new Flyway({
   url: `jdbc:postgresql://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`,
@@ -22,6 +35,7 @@ const flyway = new Flyway({
 
 (async () => {
   try {
+    console.log("\nStarting migration...");
     const result = await flyway.migrate();
     if (!result.success) {
       throw new Error(
