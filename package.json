@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "migrate": "node migrate.js",
+    "migrate:dev": "node migrate.js development",
+    "migrate:staging": "node migrate.js staging",
+    "migrate:prod": "node migrate.js production",
+    "migrate:all": "node migrate-all.js"
   },
   "keywords": [],
   "author": "",
