@@ -1,0 +1,22 @@
+CREATE TABLE users
+(
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    created_at TIMESTAMP
+    WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP
+    WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+    CREATE TABLE posts
+    (
+        id SERIAL PRIMARY KEY,
+        user_id INTEGER REFERENCES users(id),
+        title VARCHAR(200) NOT NULL,
+        content TEXT,
+        created_at TIMESTAMP
+        WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP
+        WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+); 

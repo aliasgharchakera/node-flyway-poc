@@ -1,0 +1,36 @@
+{
+  "individualResults": [
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "2",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1",
+          "description": "initial schema",
+          "type": "SQL",
+          "filepath": "/Users/mac/node-flyway-poc/migrations/V1__initial_schema.sql",
+          "executionTime": 11
+        },
+        {
+          "category": "Versioned",
+          "version": "2",
+          "description": "seed data",
+          "type": "SQL",
+          "filepath": "/Users/mac/node-flyway-poc/migrations/V2__seed_data.sql",
+          "executionTime": 5
+        }
+      ],
+      "migrationsExecuted": 2,
+      "success": true,
+      "flywayVersion": "9.22.3",
+      "database": "flyway_poc",
+      "warnings": [],
+      "timestamp": "2025-06-04T10:40:16.971099",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    }
+  ]
+}
