@@ -5,6 +5,7 @@
   "scripts": {
     "migrate": "node migrate.js",
     "migrate:dev": "node migrate.js development",
+    "migrate:test": "node migrate.js test",
     "migrate:staging": "node migrate.js staging",
     "migrate:prod": "node migrate.js production",
     "migrate:all": "node migrate-all.js"
